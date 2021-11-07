@@ -55,6 +55,7 @@ def main():
         ratio = len(correct)/len(accuracy)
         ratios.append(ratio)
     visualize(avg_loss, ratios)
+    print("Accuracy: ", mean(ratios), "Loss: ", mean(avg_loss))
 
 
 def visualize(loss, accuracy):
